@@ -1,0 +1,49 @@
+body
+{
+	background-color: #f1ecce 
+	/*background-image: url ("../images/brian-jones-WgjNcdLsCzM-unsplash.jpg"); */
+	/*background-attachment: fixed; */
+	/*opacity: 0.6*/
+}
+
+p
+{
+	font-size: 1.3em; 
+	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif; 
+	font-style: italic; 
+	font-weight: bold; 
+	/*text-decoration: underline;  
+	text-decoration: overline; 
+	text-decoration: line-through; */
+	text-align: justify;
+	border: 3px blue solid;
+	border-radius: 20px
+	box shadow: 6px 6px 0px black; 
+}
+
+h1
+{
+	text-align: center;
+	background-color: #9fc2cc
+
+}
+
+.flottant
+{
+	float: left;
+}
+
+a:hover
+{
+	color:green;
+}
+
+p:hover 
+{
+	border-left: 3px solid black;
+}
+
+a:visited
+{
+	color: #888888
+}
