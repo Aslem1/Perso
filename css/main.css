@@ -25,11 +25,22 @@ h1, h2, h3 {
     font-family: 'Noto Sans', sans-serif;
 }
 
-/*Je trouvais les images trop grandes*/
 img {
     width: 80%;
     max-width: 35rem; 
     margin: auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 /**** Menu *****************/
@@ -80,7 +91,7 @@ nav a:hover{
 /******** Entete **************************/
 header{
     margin : 1rem;
-    padding : 0.5rem 0.5rem 0.5rem 0.5rem ; /* marges intérieures haute, droite, basse et gauche */
+    padding : 0.2rem 0.2rem 0.2rem 0.2rem ; /* marges intérieures haute, droite, basse et gauche */
     /* Image de fond, calée en bas à gauche */
     background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
     /*background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
@@ -90,7 +101,9 @@ header{
 header h1{
     margin : 0 ;
     color : #383B53;    /* Couleur du texte */
-    font-size: 5rem ;  
+    font-size: 5rem ; 
+    padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
+    text-align: justify;
 }
 header h2{
     color : #B3E5FC;
@@ -111,10 +124,10 @@ main h2, aside h2{ /* Configuration des h2 du main et des h2 du aside */
 
 /***** Contenu principal ************/
 main, aside{ /* et secondaire */
-    padding : 2rem 3rem ;
+    padding : 1rem 2rem;
     color : #444 ; 
     text-align: justify ; 
-    padding : 2rem 3rem ;
+    padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
 }
 
 main p{padding-top : 0 ;}
