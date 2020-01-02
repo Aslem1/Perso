@@ -1,22 +1,38 @@
 /******** main.css ********/
 
 /**** Général *****************/
+*{
+    padding: 0; /* Marge intérieure */
+    margin: 0; /* Marge extérieure */
+    font-family: calibri, 'verdana', sans-serif, arial; 
+}
 
 html{
-    font-family: calibri ;
+    font-family:  ;
     font-size: 62.5%; /* Pour fixer 1rem = 10px */
-    padding : 0px; /* Pas de marge intérieure */
     background-color: #F7F7F2;
+    height: 100%;
 }
 
 body{
-    padding : 0px ;     /* Pas de marge intérieure */
-    margin : 0px ;      /* Pas de marge extérieure */
-    font-size: 1.4em; /* Taille de base des caractères pour toute la page : 14px */
+    font-size: 2rem; /* Taille de base des caractères pour toute la page*/
+    /*background: url(../images/photo-1470093014438-2ede8d7a4818.webp) no-repeat;*/
+    background: url(../images/sunset-3645639_960_720.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    min-height: 100%;
+}
+
+main > article {
+    width: 80%;
+    height: 40vw;
+    margin: auto;
+    background-color: rgb(209, 202, 201, 0.5);
+    overflow-y: auto;
+    padding: 0 1%;
 }
 
 p{
-    margin : 0 ;
     margin-bottom: 1rem ;
     font-family: 'roboto', sans-serif;
 }
@@ -27,6 +43,7 @@ h1, h2, h3 {
 
 img {
     width: 80%;
+    padding: 1%;
     max-width: 35rem; 
     margin: auto;
 }
@@ -46,25 +63,19 @@ h3 {
 
 /**** Menu *****************/
 nav{
-    padding : 0 ;
+    /* Menu en gris */
     background-color : #66717E;
     /*background-color : rgb(100,100,100);*/
 
 }
 
 nav ul{
-    padding : 0 ; margin : 0 ;
     list-style-type: none ; /* Pas de puce */
 }
 
 nav li{
-    padding : 0 ; margin : 0 ;
-    text-align: center; 
-    border-bottom: 1px solid #DDD ;
-}
-
-nav li:last-of-type{
-    border : none ; /* pas de bordure pour le dernier li */
+    text-align: center;
+    /*width: 10%; /* Taille des cases menus */
 }
 
 nav a{
@@ -102,15 +113,9 @@ nav li{
 }
 
 header{
-    margin : 0;
     padding : 0.2rem 0; /* marges intérieures haute, droite, basse et gauche */
-    /* Image de fond, calée en bas à gauche */
-    background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
-    /*background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
-    background: url(../images/winter2.jpg) no-repeat;
-    background-size: 100%;
     width: 100%;
-    height: 20rem;
+    height: 5rem;
 }
 
 header h1{
@@ -150,35 +155,30 @@ main, aside{ /* et secondaire */
     padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
 }
 
-main p{padding-top : 0 ;}
-
-main img{
-    float: none; /* Pour mettre côté à côte image et texte */
-    padding-left: 10rem;
-
-}
-
-/******* Contenu secondaire **************/
-aside{ 
-    padding : 1rem 3rem 2rem 3rem ; 
-    border-top : 1px solid #0288D1 ; 
-    text-align: justify ;
-}
-
-aside h2{
-    color : #666 ;
-}
-
 /***** Pied de page ************/
 footer {
     background-color: #66717E;
     color: white;
     padding: 1rem 1rem 0.2rem 2rem;
     font-size: 2rem;
+    position: fixed;
+    top: 96%;
+    width: 98.8%;
+    height: 3.1%;
 }
 
-footer img {
-    margin-left: 1rem;
-    width: auto;
+/***** aligner les images *******/
+.left {
+    float: left;
+    margin-left: 5%;
 }
 
+.right {
+    float: right;
+    margin-right: 5%;
+}
+
+.active {
+    border-bottom: 1px solid #DDD;
+    /*text-decoration: underline; /* Si menu transparent */
+}

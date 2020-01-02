@@ -1,0 +1,209 @@
+/******** main.css ********/
+
+/**** Général *****************/
+*{
+    padding: 0; /* Marge intérieure */
+    margin: 0; /* Marge extérieure */
+    font-family: 'verdana', sans-serif, arial; 
+}
+html{
+    font-size: 62.5%; /* Pour fixer 1rem = 10px */
+    background-color: #F7F7F2;
+    height: 100%;
+}
+
+body{
+    font-size: 2rem; /* Taille de base des caractères pour toute la page*/
+    background: url(../documents/notebook-1280538_1280.webp) no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+}
+
+main > article {
+    width: 80%;
+    height: 35vw;
+    margin: auto;
+    background-color: rgb(209, 202, 201, 0.5);
+    overflow-y: auto;
+}
+
+p{
+    margin : 0 ;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+h1{
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    padding: 2.5rem;
+    padding-top: 7rem;
+    color: lightgrey;
+}
+
+h2 {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    padding: 1rem;
+    color: black;
+    font-size: 3rem;
+
+}
+
+img {
+    width: 50%;
+    max-width: 100rem;
+    margin: 0 2rem;
+}
+
+
+/**** Menu *****************/
+nav{
+    background: transparent;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none ; /* Pas de puce */
+    width: 100%;
+}
+
+nav li{
+    text-align: center;
+    width: 20%;
+    border : none ; /* pas de bordure pour les li */
+}
+
+nav li:first-child{
+    margin-left : 20% ; /* pas de bordure pour le dernier li */
+}
+
+nav a{
+    display: block ; /* Un lien occupe toute la largeur de son père ce qui permet de cliquer ailleurs que sur le texte */ 
+    color: #FFFFFF;  
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+nav a:hover{
+    color: #331832;
+    background-color: #C0C0C0;
+    background-size: 100%;
+    transition-duration: 1s;
+}
+
+@media (min-width: 400px) {
+
+    nav ul {
+        display: flex;
+    }
+
+}
+
+
+/******** Entete **************************/
+header{
+    min-height : 7vw ; /* Hauteur minimale*/
+    background-size: 100%; /* L'image s'étend sur pour couvrir tout le fond du header */
+    width: 100%;
+    height: 10rem;
+
+}
+
+
+/***** Contenu principal ************/
+main{ 
+    color:black; 
+    text-align: justify;
+    padding : 0;
+}
+
+main p{
+    padding-top : 0 ;
+}
+
+/******* Contenu secondaire **************/
+aside{ 
+    padding : 1rem 3rem 2rem 3rem ;
+    text-align: justify ;
+}
+
+
+/***** Pied de page ************/
+footer {
+    background-color: #66717E;
+    color: white;
+    padding: 1rem 1rem 0.2rem 2rem;
+    font-size: 2rem;
+    position: fixed;
+    top: 96%;
+    width: 98.8%;
+    height: 3.1%;
+}
+
+/***** Bouton ************/
+.bouton1 {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.bouton1:hover{
+    background-color:#4095c6;
+}
+
+@media all and (max-width:30em){
+    .bouton1{
+        display:block;
+        margin:0.2em auto;
+    }
+
+}
+
+/***** aligner les images *******/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/***** gestion tableau *******/
+table {
+    width: 100%;
+}
+
+th {
+    height: 2rem;
+    text-align: left;
+    background-color: #70604B;
+    color: white;
+}
+
+td {
+    height: 1.2rem;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(242, 242, 242, 0.5);
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
