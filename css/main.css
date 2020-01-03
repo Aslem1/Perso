@@ -4,18 +4,18 @@
 *{
     padding: 0; /* Marge intérieure */
     margin: 0; /* Marge extérieure */
-    font-family: calibri, 'verdana', sans-serif, arial; 
+    font-family: calibri, 'verdana', sans-serif, arial;
+    list-style-type: none; /* Pas de puce */
+    font-size: 2rem; /* Taille de base des caractères pour toute la page*/
 }
 
 html{
-    font-family:  ;
     font-size: 62.5%; /* Pour fixer 1rem = 10px */
     background-color: #F7F7F2;
     height: 100%;
 }
 
 body{
-    font-size: 2rem; /* Taille de base des caractères pour toute la page*/
     /*background: url(../images/photo-1470093014438-2ede8d7a4818.webp) no-repeat;*/
     background: url(../images/sunset-3645639_960_720.jpg) no-repeat;
     background-attachment: fixed;
@@ -30,11 +30,6 @@ main > article {
     background-color: rgb(209, 202, 201, 0.5);
     overflow-y: auto;
     padding: 0 1%;
-}
-
-p{
-    margin-bottom: 1rem ;
-    font-family: 'roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -54,7 +49,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -69,21 +64,18 @@ nav{
 
 }
 
-nav ul{
-    list-style-type: none ; /* Pas de puce */
-}
-
-nav li{
+nav > ul > li{
     text-align: center;
-    /*width: 10%; /* Taille des cases menus */
+    width: 12.5%; /* Taille des cases menus */
+    height: 100%;
 }
 
 nav a{
     display: block ; /* Un lien occupe toute la largeur de son père ce qui permet de cliquer ailleurs que sur le texte */ 
-    color: #FFFFFF;  
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 2rem;
-    padding: 2rem;
+    height: 4rem;
+    padding-top: 1.5rem;
 }
 
 nav a:hover{
@@ -94,10 +86,9 @@ nav a:hover{
 
 @media (min-width: 400px) {
 
-    nav ul {
+    nav > ul {
         display: flex;
     }
-
 }
 
 /******** Entete **************************/
@@ -126,41 +117,29 @@ header h1{
     text-align: justify;
 }
 
-header h2{
-    color : #B3E5FC;
-    margin: 0  ;
-    font-size: 3rem ;
-    font-weight: normal ; /* Gras */
-    font-style: italic ;
-}
-
 /********* H2 ***********************/
 main h2, aside h2{ /* Configuration des h2 du main et des h2 du aside */
-    padding : 0.3em 0 0.2em 0; 
-    margin : 0 ; 
-    color : #66717E ;
-    font-size: 3rem ;
-    clear : left ;/* Pour arrêter le float left des images */
+    padding : 0.5% 0 0.3% 0;
+    color : #66717E;
+    clear : left;/* Pour arrêter le float left des images */
 }
 
 /***** Contenu principal ************/
 main {
-    padding: 10%
+    padding: 10%;
 }
 
 main, aside{ /* et secondaire */
-    padding : 1rem 2rem;
-    color : #444 ; 
-    text-align: justify ; 
-    padding : 0.2rem 0.2rem 0.2rem 0.2rem ;
+    color : #444;
+    text-align: justify;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem ;
 }
 
 /***** Pied de page ************/
 footer {
     background-color: #66717E;
     color: white;
-    padding: 1rem 1rem 0.2rem 2rem;
-    font-size: 2rem;
+    padding: 0.3% 1rem 0.2% 2rem;
     position: fixed;
     top: 96%;
     width: 98.8%;
@@ -179,6 +158,34 @@ footer {
 }
 
 .active {
-    border-bottom: 1px solid #DDD;
-    /*text-decoration: underline; /* Si menu transparent */
+    text-decoration: underline; /* Si menu transparent */
+}
+
+.deroulant {
+    color: white;
+}
+
+.deroulant > ul{
+    display: none;
+    position: absolute;
+    background-color: #66717E;
+    width: 12.5%;
+}
+
+.deroulant:hover ul {
+    display: block;
+}
+
+.deroulant > p {
+    padding-top: 1.5rem;
+    height: 4rem;
+}
+
+.deroulant > ul > li{
+    width: 100%;
+}
+
+#mouton {
+    width: 30rem;
+    height: 20rem;
 }
