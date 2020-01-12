@@ -27,7 +27,8 @@ main > article {
     width: 80%;
     height: 40vw;
     margin: auto;
-    background-color: rgb(209, 202, 201, 0.5);
+    margin-bottom: 2vw;
+    background-color: rgb(209, 202, 201, 0.8);
     overflow-y: auto;
     padding: 0 1%;
 }
@@ -130,7 +131,7 @@ main {
 }
 
 main, aside{ /* et secondaire */
-    color : #444;
+    color : #363636;
     text-align: justify;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem ;
 }
