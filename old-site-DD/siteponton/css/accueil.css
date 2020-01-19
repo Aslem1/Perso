@@ -1,0 +1,11 @@
+#calendar
+{
+	width				:	650px;
+	height				:	500px;
+	float				:	left;
+}
+
+.droite
+{
+	float		:	right;
+}

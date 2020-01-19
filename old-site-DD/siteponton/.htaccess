@@ -1,0 +1,4 @@
+AuthName "Entrez vos identifiants"
+AuthType Basic
+AuthUserFile "/mnt/weba/a0/08/52031608/htdocs/siteponton/.htpasswd"
+Require valid-user
