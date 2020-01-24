@@ -92,6 +92,11 @@ nav a:hover{
     }
 }
 
+article > ul > li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
 /******** Entete **************************/
 nav{
     position : sticky;
