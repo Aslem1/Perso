@@ -16,8 +16,6 @@ html{
 }
 
 body{
-    /*background: url(../images/photo-1470093014438-2ede8d7a4818.webp) no-repeat;*/
-    background: url(../images/sunset-3645639_960_720.jpg) no-repeat;
     background-attachment: fixed;
     background-size:cover;
     min-height: 100%;
